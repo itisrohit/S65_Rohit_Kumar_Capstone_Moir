@@ -1,86 +1,153 @@
 # MOIR
 
 ## 💡 Project Idea
-**MOIR** is a real-time chat and streaming platform with AI-powered integration. The platform enables users to chat, stream content together, and listen to music collaboratively. The AI assistant provides friend recommendations based on 80% music taste similarity and acts as an icebreaker in conversations. 
+**MOIR** is an AI-powered chat application that enhances conversations through intelligent assistance. The platform features **Mizuki**, a friendly AI assistant that helps keep conversations flowing naturally. Mizuki can provide conversation starters, ice breakers, message suggestions, and respond to direct questions to make chatting more engaging and meaningful.
+
+### 🤖 Meet Mizuki - Your AI Chat Companion
+Mizuki is designed to be warm, helpful, and perceptive - never dominating conversations but always ready to assist when needed. Whether you're stuck for words, want to break the ice, or need a conversation starter, Mizuki is there to help make your chats more enjoyable.
+
+### 🎯 Core Purpose
+- **Enhanced Conversations:** AI-powered assistance to keep chats engaging
+- **Smart Suggestions:** Context-aware message recommendations
+- **Conversation Starters:** Help break the ice and start meaningful discussions
+- **Direct AI Interaction:** Ask Mizuki questions directly with @Mizuki commands
+- **Real-time Chat:** Seamless messaging with friends with typing indicators and read receipts
+- **Friend Management:** Add and manage friends with real-time status updates
 
 ## 🛠 Tech Stack
 - **🖥 Frontend:** Next.js (TypeScript, Tailwind CSS)
 - **🔙 Backend:** Express.js with TypeScript
 - **🗄 Database:** MongoDB
-- **📡 Real-time Communication:** WebSockets, WebRTC
-- **🔑 Authentication:** JWT & OAuth
+- **📡 Real-time Communication:** WebSockets, Socket.io
+- **🔑 Authentication:** JWT with refresh tokens
+- **☁️ File Storage:** Cloudinary for profile images
+- **🤖 AI Integration:** Groq API with Llama 3 model
 
-## 📅 Capstone Project Plan
-This plan prioritizes the required concepts for scoring while keeping tasks manageable.
+## ✅ Development Progress (6 Weeks)
 
-### 📌 Current Progress: Week 1 - Work in Progress ⏳
+### Week 1: Project Setup & Foundation
+**Goals:** Establish project structure and basic setup
+- **Frontend Setup:** Next.js with TypeScript, Tailwind CSS, shadcn/ui components
+- **Backend Setup:** Express.js with TypeScript, MongoDB connection
+- **Project Structure:** Organized folder structure for scalability
+- **Basic Routing:** Authentication pages and main app layout
+- **Environment Configuration:** Development and production environment setup
 
-### ⏳ Week 1: Initial Setup & Project Management
-- ⏳ **Day 1:** Set up the GitHub repository and initialize the project.
-- ⏳ **Day 2:** Configure GitHub Projects for task tracking (add at least 10 entries for tracking over 10 days).
-- ⏳ **Day 3:** Initialize Next.js frontend application.
-- ⏳ **Day 4:** Set up Express.js backend with TypeScript.
-- ⏳ **Day 5:** Deploy the backend server (initial version).
-- ⏳ **Day 6:** Plan and create the database schema.
-- ⏳ **Day 7:** Implement basic database read and write operations.
+### Week 2: Authentication System
+**Goals:** Complete user authentication and profile management
+- **User Registration & Login:** JWT-based authentication with refresh tokens
+- **Password Security:** bcrypt hashing and secure password management
+- **Session Management:** Persistent sessions with secure cookie handling
+- **Profile Management:** User profile CRUD operations
+- **Image Upload:** Cloudinary integration for profile pictures
+- **Form Validation:** Client and server-side validation
 
-### ⏳ Week 2: API & Database Implementation
-- ⏳ **Day 8:** Implement authentication (username/password) using JWTs.
-- ⏳ **Day 9:** Implement OAuth (Google authentication).
-- ⏳ **Day 10:** Create and test GET API routes.
-- ⏳ **Day 11:** Create and test POST API routes.
-- ⏳ **Day 12:** Create and test PUT API routes.
-- ⏳ **Day 13:** Implement relationships between database entities.
-- ⏳ **Day 14:** Implement 'update' and 'delete' functionalities for an entity.
+### Week 3: Real-time Chat Foundation
+**Goals:** Build the core chat infrastructure
+- **WebSocket Setup:** Socket.io integration for real-time communication
+- **Database Models:** MongoDB schemas for conversations and messages
+- **Message Persistence:** Store and retrieve chat messages
+- **Basic Chat UI:** Message display and input components
+- **Conversation Management:** Create and manage chat conversations
+- **API Endpoints:** RESTful APIs for chat operations
 
-### ⏳ Week 3: Frontend Development & File Handling
-- ⏳ **Day 15:** Develop core frontend components in Next.js.
-- ⏳ **Day 16:** Implement UI design matching the planned end state.
-- ⏳ **Day 17:** Implement API calls for CRUD operations in the frontend.
-- ⏳ **Day 18:** Implement file upload functionality.
-- ⏳ **Day 19:** Update and document Bruno/API templates in the repo.
-- ⏳ **Day 20:** Conduct frontend and backend integration testing.
-- ⏳ **Day 21:** Deploy the frontend application.
+### Week 4: Advanced Chat Features
+**Goals:** Enhance chat with real-time features
+- **Typing Indicators:** Real-time typing status updates
+- **Read Receipts:** Message read status tracking and display
+- **Message History:** Complete conversation history with pagination
+- **Real-time Updates:** Instant message delivery and status updates
+- **Chat List Management:** Organize and display conversations
+- **Message Formatting:** Time stamps and sender identification
 
-### ⏳ Week 4: Additional Features & Optimizations
-- ⏳ **Day 22:** Implement real-time chat using WebSockets.
-- ⏳ **Day 23:** Implement real-time streaming functionality.
-- ⏳ **Day 24:** Optimize database queries and API endpoints.
-- ⏳ **Day 25:** Conduct full-stack integration testing.
-- ⏳ **Day 26:** Finalize and test authentication and authorization.
-- ⏳ **Day 27:** Implement user roles and access control.
-- ⏳ **Day 28:** Conduct a security audit and performance testing.
+### Week 5: Friend System & AI Integration
+**Goals:** Add social features and AI assistant
+- **Friend System:** Send, accept, and reject friend requests
+- **Friend Management:** Complete friends list with online status
+- **Real-time Notifications:** Socket-based friend request notifications
+- **AI Assistant (Mizuki):** Groq API integration with Llama 3 model
+- **Smart Responses:** Context-aware conversation assistance
+- **Message Suggestions:** AI-powered message recommendations
+- **Direct AI Interaction:** @Mizuki command for direct questions
 
-### ⏳ Week 5: AI Integration & Enhancements
-- ⏳ **Day 29:** Integrate AI-based friend recommendations.
-- ⏳ **Day 30:** Implement AI-powered conversation starters.
-- ⏳ **Day 31:** Test and refine AI features for accuracy.
-- ⏳ **Day 32:** Enhance frontend UI/UX with animations and responsiveness.
-- ⏳ **Day 33:** Implement user settings and preferences.
-- ⏳ **Day 34:** Improve chat history and message persistence.
-- ⏳ **Day 35:** Implement notifications and alerts.
+### Week 6: Polish & Optimization
+**Goals:** Final touches and performance optimization
+- **UI/UX Refinement:** Responsive design and mobile optimization
+- **Error Handling:** Comprehensive error handling and user feedback
+- **Performance Optimization:** Code splitting and loading states
+- **Security Enhancements:** Input validation and security measures
+- **Testing & Debugging:** Thorough testing and bug fixes
+- **Documentation:** Code documentation and README completion
 
-### ⏳ Week 6: Finalization & Deployment
-- ⏳ **Day 36:** Final testing and bug fixes.
-- ⏳ **Day 37:** Deploy the final backend and frontend versions.
-- ⏳ **Day 38:** Work on presentation and demo.
-- ⏳ **Day 39:** Prepare documentation for setup and usage.
-- ⏳ **Day 40:** Prepare the final report and submission materials.
-- ⏳ **Day 41:** Final project presentation.
-- ⏳ **Day 42:** Retrospective and project evaluation.
+## 🚀 How to Run the Project
 
-## ⚙️ How to Run the Project
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB database
+- Groq API key (optional, has fallback)
+- Cloudinary account (for profile images)
+
+### Installation & Setup
+
 ```sh
 # Clone the repository
 git clone https://github.com/kalviumcommunity/S65_Rohit_Kumar_Capstone_Moir.git
 cd S65_Rohit_Kumar_Capstone_Moir
 
-# Install dependencies
-pnpm install  
+# Install dependencies for both client and server
+# Client uses npm
+cd client && npm install
+
+# Server uses pnpm
+cd ../server && pnpm install
+
+# Set up environment variables
+# Create .env files in both client and server directories
+# See .env.example files for required variables
 
 # Start the development servers
-npm run dev  
-pnpm run dev 
+# Terminal 1 - Start backend server (using pnpm)
+cd server && pnpm run dev
+
+# Terminal 2 - Start frontend client (using npm)
+cd client && npm run dev
 ```
+
+### Environment Variables
+
+**Server (.env):**
+```env
+PORT=8080
+MONGODB_URI=your_mongodb_connection_string
+ACCESS_TOKEN_SECRET=your_access_token_secret
+REFRESH_TOKEN_SECRET=your_refresh_token_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+```
+
+**Client (.env.local):**
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8080/api/v1
+NEXT_PUBLIC_SOCKET_URL=http://localhost:8080
+NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key
+```
+
+## 📱 Features Overview
+
+### Core Features
+- **Real-time Chat:** Instant messaging with friends
+- **Friend System:** Add, manage, and chat with friends
+- **AI Assistant:** Get help and suggestions from Mizuki
+- **Profile Management:** Update profile and settings
+- **Real-time Status:** See when friends are online
+- **File Upload:** Profile picture upload
+
+### Advanced Features
+- **Typing Indicators:** See when someone is typing
+- **Read Receipts:** Know when messages are read
+- **Message History:** Complete conversation history
+- **Responsive Design:** Works on all devices
+
 ---
 ✨ Project by **Rohit Kumar**
